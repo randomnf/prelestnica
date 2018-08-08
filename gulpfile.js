@@ -45,7 +45,8 @@ gulp.task("htmlmin",function(){
 		}))
 		.pipe(htmlmin({
 			collapseWhitespace: true,
-			minifyJS: true
+			minifyJS: true,
+			removeComments: true
 		}))
 		.pipe(gulp.dest('build'));
 });
